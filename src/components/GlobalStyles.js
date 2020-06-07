@@ -9,7 +9,9 @@ html {
   --color-background-primary: #ffffff;
   --color-background-secondary: #000000;
   --color-text-primary: #000000;
+  --color-text-secondary: #ffffff;
   --color-accent: #ffce1f;
+  --color-cta-primary: #000000;
 }
 
 body {
