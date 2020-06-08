@@ -58,9 +58,7 @@ class Home extends Component {
           <ContentGrid>
             <ContentColumn>
               <H2>Manifesto for Collective Law Enforcement</H2>
-              <PLarge>
-                We are a community that builds and values:
-              </PLarge>
+              <PLarge>We are a community that builds and values:</PLarge>
               <ul>
                 <Li>
                   <Bold>Permissionless approaches</Bold> as a complement to
@@ -97,7 +95,9 @@ class Home extends Component {
                   }}
                   projectDesc={
                     'A community curated database of individual police officer interactions and overall department culture.'
-                  }                 
+                  }
+                  linkHref={'https://clarity.onrender.com/'}
+                  linkText={'View Demo →'}
                 />
                 <ProjectCard
                   projectImg={batmanThumb}
@@ -136,7 +136,10 @@ class Home extends Component {
               <a href='http://twitter.com/crystalorg' target='_blank'>
                 <LinkIcon src={iconTwitter} alt={'Twitter Logo'} />
               </a>
-              <a href='https://github.com/nicktesla/crystalproject-info' target='_blank'>
+              <a
+                href='https://github.com/nicktesla/crystalproject-info'
+                target='_blank'
+              >
                 <LinkIcon src={iconGithub} alt={'GitHub Logo'} />
               </a>
             </div>

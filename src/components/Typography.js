@@ -18,7 +18,7 @@ export const H1 = styled.h1`
   }
 
   @media (max-width: 480px) {
-    font-size: 30px;
+    font-size: 26px;
     line-height: 44px;
   }
 `;
@@ -118,9 +118,33 @@ export const Li = styled.li`
   @media (max-width: 800px) {
     font-size: 18px;
     line-height: 32px;
+    margin-left: -20px;
   }
 
   @media (max-width: 480px) {
     margin-bottom: 18px;
+  }
+`;
+
+export const ButtonLink = styled.a`
+  display: block;
+  width: max-content;
+  height: 48px;
+  padding: 0 24px;
+  background-color: var(--color-background-secondary);
+  border: 2px solid var(--color-text-secondary);
+  font-size: 16px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  cursor: pointer;
+  text-decoration: none;
+
+  &:hover {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-text-primary);
+    padding: 0 24px;
   }
 `;
