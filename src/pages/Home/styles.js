@@ -42,14 +42,14 @@ export const Main = styled.main`
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
-  margin-bottom: 96px;
+  margin-bottom: 40px;
 
   @media (max-width: 600px) {
-    margin-bottom: 48px;
+    margin-bottom: 20px;
   }
 
   @media (max-width: 480px) {
-    padding: 0 16px;
+    padding: 0 7px;
   }
 `;
 
@@ -58,7 +58,7 @@ export const Splash = styled.div`
   flex-direction: row;
   justify-content: center;
   margin-bottom: 0px;
-  padding: 200px 0;
+  padding: 90px 0;
 
   @media (max-width: 480px) {
     margin-bottom: 0px;

@@ -48,9 +48,9 @@ class Home extends Component {
               Join our Slack →
             </ButtonLink>
             <H1 style={{ marginBottom: 0 }}>
-              <Underline>Improving relationships</Underline>
+              <Underline>Technology for transparent</Underline>
               <br />
-              between police and their communities.
+              and community driven law enforcement.
             </H1>
           </SplashColumn>
         </Splash>
@@ -59,9 +59,7 @@ class Home extends Component {
             <ContentColumn>
               <H2>Manifesto for Collective Law Enforcement</H2>
               <PLarge>
-                We are a community that believes radical transparency in law
-                enforcement and healthy community engagement are critical. We
-                also believe that software can play a significant role:
+                We are a community that builds and values:
               </PLarge>
               <ul>
                 <Li>
@@ -98,7 +96,7 @@ class Home extends Component {
                     borderRadius: 6,
                   }}
                   projectDesc={
-                    'A citizen’s database of individual police officer and department profiles.'
+                    'A community curated database of individual police officer interactions and overall department culture.'
                   }
                 />
                 <ProjectCard
@@ -106,7 +104,7 @@ class Home extends Component {
                   projectName={'Batman'}
                   projectImgAlt={'Batman Mobile App'}
                   projectDesc={
-                    'An Amber Alert Protocol for the internet. A system that analyze real-time video and photos streams.'
+                    'An Amber Alert Protocol for the internet. Video, image processing, reviews and broadcast across internet platforms and news sites'
                   }
                 />
               </ContentColumnSubgrid>
@@ -126,7 +124,7 @@ class Home extends Component {
             <H1 style={{ marginBottom: 64 }}>
               <Underline>Join our Slack</Underline>
               <br />
-              to contribute or add new ideas.
+              to contribute or suggest new ideas.
             </H1>
             <div
               style={{
