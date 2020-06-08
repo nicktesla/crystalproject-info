@@ -32,8 +32,8 @@ export const HeaderH3 = styled(H3)`
 `;
 
 export const BLMBanner = styled.div`
-  width: 76px;
-  height: 88px;
+  width: 64px;
+  height: 74px;
   align-self: top;
 `;
 
@@ -57,10 +57,11 @@ export const Splash = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-bottom: 96px;
+  margin-bottom: 0px;
+  padding: 200px 0;
 
   @media (max-width: 480px) {
-    margin-bottom: 64px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -117,6 +118,8 @@ export const ButtonLink = styled.a`
   color: var(--color-text-secondary);
   cursor: pointer;
   text-decoration: none;
+
+  margin-bottom: 48px;
 
   &:hover {
     background-color: var(--color-background-primary);
@@ -190,5 +193,14 @@ export const FooterColumn = styled.div`
 
   @media (max-width: 480px) {
     max-width: 240px;
+  }
+`;
+
+export const LinkIcon = styled.img`
+  width: 40px;
+  height: 40px;
+
+  &:hover {
+    opacity: 0.6;
   }
 `;
