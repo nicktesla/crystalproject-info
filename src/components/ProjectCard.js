@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import { H4, P } from './Typography';
+import { H4, P, ButtonLink } from './Typography';
 
 export const Card = styled.div`
   margin-bottom: 64px;
@@ -23,7 +23,20 @@ function ProjectCard(props) {
         style={props.imgStyle}
       />
       <H4 style={{ marginBottom: 16 }}>{props.projectName}</H4>
-      <P>{props.projectDesc}</P>
+      <P style={{ marginBottom: 16 }}>{props.projectDesc}</P>
+      {props.linkHref ? (
+        <>
+          <ButtonLink
+            style={{ marginBottom: 32 }}
+            href={props.linkHref}
+            target={'_blank'}
+          >
+            {props.linkText}
+          </ButtonLink>
+        </>
+      ) : (
+        <></>
+      )}
     </Card>
   );
 }

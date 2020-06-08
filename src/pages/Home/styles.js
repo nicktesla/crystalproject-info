@@ -49,7 +49,7 @@ export const Main = styled.main`
   }
 
   @media (max-width: 480px) {
-    padding: 0 7px;
+    padding: 0 16px;
   }
 `;
 
@@ -68,10 +68,13 @@ export const Splash = styled.div`
 export const SplashColumn = styled.div`
   width: 100%;
   max-width: 800px;
-  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media (max-width: 480px) {
+    padding: 0 20px;
+  }
 `;
 
 export const UnityHands = styled.div`
@@ -95,12 +98,13 @@ export const Underline = styled.span`
   &::after {
     content: '';
     position: absolute;
-    width: 105%;
+    width: 103%;
     height: 32px;
     bottom: -12px;
-    left: -2.5%;
+    left: -1%;
     z-index: -1;
     background-image: url(${marker});
+    background-size: cover;
   }
 `;
 
