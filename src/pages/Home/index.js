@@ -97,7 +97,7 @@ class Home extends Component {
                   }}
                   projectDesc={
                     'A community curated database of individual police officer interactions and overall department culture.'
-                  }
+                  }                 
                 />
                 <ProjectCard
                   projectImg={batmanThumb}
@@ -133,10 +133,10 @@ class Home extends Component {
                 justifyContent: 'space-between',
               }}
             >
-              <a href='#'>
+              <a href='http://twitter.com/crystalorg' target='_blank'>
                 <LinkIcon src={iconTwitter} alt={'Twitter Logo'} />
               </a>
-              <a href=''>
+              <a href='https://github.com/nicktesla/crystalproject-info' target='_blank'>
                 <LinkIcon src={iconGithub} alt={'GitHub Logo'} />
               </a>
             </div>
