@@ -22,7 +22,7 @@ function ProjectCard(props) {
         alt={props.projectImgAlt}
         style={props.imgStyle}
       />
-      <H4>{props.projectName}</H4>
+      <H4 style={{ marginBottom: 16 }}>{props.projectName}</H4>
       <P>{props.projectDesc}</P>
     </Card>
   );

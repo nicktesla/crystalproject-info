@@ -14,6 +14,7 @@ import {
   ContentColumnSubgrid,
   Footer,
   FooterColumn,
+  LinkIcon,
 } from './styles';
 
 import { H1, H2, H3, PLarge, Bold, Ul, Li } from '../../components/Typography';
@@ -21,8 +22,10 @@ import { H1, H2, H3, PLarge, Bold, Ul, Li } from '../../components/Typography';
 import ProjectCard from '../../components/ProjectCard';
 
 import BLMBannerImage from '../../assets/images/blm_banner.png';
-import crystalThumb from '../../assets/images/crystal_thumb.png';
+import crystalThumb from '../../assets/images/crystal__thumb.png';
 import batmanThumb from '../../assets/images/batman_thumb.png';
+import iconTwitter from '../../assets/images/twitter_icon.png';
+import iconGithub from '../../assets/images/github_icon.png';
 
 class Home extends Component {
   render() {
@@ -36,13 +39,19 @@ class Home extends Component {
         </Header>
         <Splash>
           <SplashColumn>
-            <UnityHands />
-            <H1>
+            <ButtonLink
+              href={
+                'https://join.slack.com/t/crystalpolice/shared_invite/zt-essyn1xu-G5CAEuWgvSaZ04iIQ11FCQ'
+              }
+              target={'_blank'}
+            >
+              Join our Slack →
+            </ButtonLink>
+            <H1 style={{ marginBottom: 0 }}>
               <Underline>Improving relationships</Underline>
               <br />
               between police and their communities.
             </H1>
-            <ButtonLink href={'#'}>Join our Slack →</ButtonLink>
           </SplashColumn>
         </Splash>
         <Main>
@@ -52,9 +61,7 @@ class Home extends Component {
               <PLarge>
                 We are a community that believes radical transparency in law
                 enforcement and healthy community engagement are critical. We
-                also believe that software can play a significant role in
-                facilitating these outcomes and eradicating injustice. Inspired
-                by the work we’ve done building large-scale products we value:
+                also believe that software can play a significant role:
               </PLarge>
               <ul>
                 <Li>
@@ -91,7 +98,7 @@ class Home extends Component {
                     borderRadius: 6,
                   }}
                   projectDesc={
-                    'A real-time searchable database of individual police officer and department profiles. Integrations with existing public records and RateMyProfessor style community ratings and video submissions.'
+                    'A citizen’s database of individual police officer and department profiles.'
                   }
                 />
                 <ProjectCard
@@ -99,7 +106,7 @@ class Home extends Component {
                   projectName={'Batman'}
                   projectImgAlt={'Batman Mobile App'}
                   projectDesc={
-                    'An Amber Alert protocol for the internet. A system that takes real-time video and photos, automatically processes them to highlight brutality and other unsafe events where it is manually reviewed and ultimately broadcast to all.'
+                    'An Amber Alert Protocol for the internet. A system that analyze real-time video and photos streams.'
                   }
                 />
               </ContentColumnSubgrid>
@@ -108,12 +115,33 @@ class Home extends Component {
         </Main>
         <Footer>
           <FooterColumn>
-            <H1>
+            <ButtonLink
+              href={
+                'https://join.slack.com/t/crystalpolice/shared_invite/zt-essyn1xu-G5CAEuWgvSaZ04iIQ11FCQ'
+              }
+              target={'_blank'}
+            >
+              Join our Slack →
+            </ButtonLink>
+            <H1 style={{ marginBottom: 64 }}>
               <Underline>Join our Slack</Underline>
               <br />
               to contribute or add new ideas.
             </H1>
-            <ButtonLink href={'#'}>Join our Slack →</ButtonLink>
+            <div
+              style={{
+                display: 'flex',
+                width: 112,
+                justifyContent: 'space-between',
+              }}
+            >
+              <a href='#'>
+                <LinkIcon src={iconTwitter} alt={'Twitter Logo'} />
+              </a>
+              <a href=''>
+                <LinkIcon src={iconGithub} alt={'GitHub Logo'} />
+              </a>
+            </div>
           </FooterColumn>
         </Footer>
       </>
