@@ -81,6 +81,10 @@ export const UnityHands = styled.div`
   background-position: center left, center right;
   background-size: 80px;
   background-repeat: no-repeat;
+
+  @media (max-width: 480px) {
+    height: 120px;
+  }
 `;
 
 export const Underline = styled.span`
